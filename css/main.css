@@ -1,0 +1,42 @@
+*{
+  font-family:Berling, Times New Roman, serif;
+}
+.navbar{
+    background-color: rgb(25, 27, 34);
+}
+
+@media screen and (max-width: 600px) {
+.carousel-caption{
+      font-size: 30px;
+
+}
+}
+.logo{
+    width: 100px;
+}
+.nav-item{
+color: #FFE81F;  
+font-weight: 900; 
+}
+
+.carousel-caption{
+
+text-align: center;
+
+top: 50%;
+    }
+
+.d-block{
+filter: brightness(70%) opacity(80%);
+
+}
+h1{
+
+color: #FFE81F; 
+
+}
+
+h2{
+
+color: #e0fe75; 
+}
