@@ -1,8 +1,14 @@
+
+@font-face{
+    font-family: StarJedi;
+    src: url("../tipografia/SFDistantGalaxyAltOutline.ttf");
+}
 *{
-  font-family:Berling, Times New Roman, serif;
+font-family: StarJedi;
+color: #FFE81F;
 }
 .navbar{
-    background-color: rgb(25, 27, 34);
+    background-color: rgb(46, 55, 90);
 }
 
 @media screen and (max-width: 600px) {
@@ -16,27 +22,78 @@
 }
 .nav-item{
 color: #FFE81F;  
-font-weight: 900; 
+
 }
 
-.carousel-caption{
-
+.form-group{
 text-align: center;
-
-top: 50%;
-    }
-
-.d-block{
-filter: brightness(70%) opacity(80%);
-
+padding-top: 2em;
 }
-h1{
-
-color: #FFE81F; 
-
+input{
+margin: 0 auto;
+max-width: 300px;
 }
 
-h2{
+.btnReg{
+margin: 0 auto;
+width: 150px;
 
-color: #e0fe75; 
+
 }
+.btn-warning{
+    width: 100%;
+    
+}
+body{
+background-image: url("../images/darth-vader.jpg");
+height: 400px;
+width: 100%;
+}
+label{
+color: #FFE81F;
+}
+.texto{
+margin: 0 auto;
+}
+.pregunta{
+padding-top: 10em;
+text-align: center;
+}
+
+.btnInd{
+    margin: 0 auto;
+    width: 150px;
+    padding-top: 4em;
+    
+}
+.respuestas{
+color: black;
+padding-top: 1em;
+
+
+
+}
+.btn-primary{
+
+color: black;
+height: 150px;
+width: 300px;
+}
+
+
+.card-body{
+background-color: white;
+width: 300px;
+height: 200px;
+}
+
+.preguntasSec{
+padding-top: 3em;
+
+}
+.pregCol{
+
+justify-content: center;
+}
+
+
