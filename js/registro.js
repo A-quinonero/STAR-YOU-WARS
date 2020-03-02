@@ -16,12 +16,19 @@ signUpButton.addEventListener("click", function(event){
     
     if (checkValidUser()){
         console.log("user registered")
-        createUser(name.value, email.value, password.value)
+        createUser(userName.value, email.value, password.value)
     };
 })
-
+/*class User {
+    constructor(name, email, password){
+        this.name = name;
+        this.email = email;
+        this.password = password;
+    }
+  }
+  */
 function checkValidUser() {
-    let signUpValidator = new SignUpValidator (userName.value, email.value, password.value, repeatPassword.value);
+    let signUpValidator = new SignUpValidator(userName.value, email.value, password.value, repeatPassword.value);
     
     let usersDB = JSON.parse(localStorage.getItem("users"));
     let validUser = true;
@@ -42,7 +49,7 @@ function checkValidUser() {
         signUpValidator.errorCreator("Las contraseñas no coinciden", repeatPassword)
         validUser=false
     }
-    if (!signUpValidator.checkEmailInDB(usersDB)){
+    if (signUpValidator.checkEmailInDB(usersDB)){
         signUpValidator.errorCreator("Este mail ya existe", email)
         validUser=false
     }
@@ -56,7 +63,7 @@ function deleteErrors (){
 }
 
 function createUser (name, email, password) {
-    const newUser = new User (name, email, password)
+    const newUser = new User(name, email, password)
 
     if (usersDB){
         usersDB.push(newUser);

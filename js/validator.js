@@ -1,4 +1,3 @@
-"use strict";
 
 class Validator {
     constructor(userName, email, password){
@@ -45,18 +44,23 @@ class SignUpValidator extends Validator {
     }
 
     checkEmailInDB (usersDB){
+        console.log('checking...')
+        console.log(usersDB)
         let userExists = false;
-
-        if (!usersDB){
-            return true;
-        }
-        else{
+        // if (!usersDB){
+        //     console.log('true')
+        //     return true;
+        // }
+        // else{
+        //     console.log('falsooo')
             usersDB.forEach(user => {
+                console.log('======>',user.email, this.email)
                 if (user.email === this.email){
-                    userExists=false
+                    console.log('email', user.email, this.email)
+                    userExists=true
                 }
             })
-        }
+        // }
         return userExists;
     }
 
@@ -70,8 +74,8 @@ class SignUpValidator extends Validator {
 }
 
 class LogInValidator extends Validator {
-    constructor (){
-        super();
+    constructor (userName, email, password){
+        super(userName, email, password);
     }
 
     checkEmailInDB (string){
