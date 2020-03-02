@@ -17,8 +17,6 @@ console.log(usersDB)
                 console.log(user.email, this.email)
                 
                 alert('You are loged in.');
-            }else {
-                alert('ERROR.');
             }
         })
     }
