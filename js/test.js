@@ -1,8 +1,4 @@
 
-let nameSw = document.getElementById("name");
-
-let btnResp = document.getElementById('btnResp')
-let respVal = document.querySelectorAll(".respu1");
 
 
 
@@ -10,120 +6,16 @@ let counter = 0;
 [...respVal].forEach(item => {
   item.addEventListener("change", function(event) {
     counter += Number(event.currentTarget.value);
-    console.log(counter);
   });
 });
 
-btnResp.addEventListener('click', (e) =>{
-    //e.preventDefault()
-    console.log('cloosdijfkd')
-    setTimeout(() => { mostrarHeroe(counter) }, 1000);
+btnResp.addEventListener("click", e => {
+  e.preventDefault();
+  open(`result.html?score=${counter}`);
+});
 
-})
-
-function mostrarHeroe(counter) {
-    console.log('swichiiinnnnn')
-  switch (counter) {
-    case 6:
-      document.getElementById("app").src = "images/darthvader-app",
-        searchVader();
-      break;
-    case 5:
-      document.getElementById("app").src = "images/palpatine-app",
-        searchPal();
-      break;
-    case 4:
-        document.getElementById("app").src = "images/r2d2",
-        searchR2d2();
-        break;
-    case 3:
-        document.getElementById("app").src = "images/han-app",
-        searchHan();
-        break;
-    case 2:
-        document.getElementById("app").src = "images/luke-app",
-        searchLuke();
-        break;
-    case 1:
-        document.getElementById("app").src = "images/chewi-app",
-        searchChewi();
-        break;
-    default:
-        document.getElementById("app").src = "images/yoda-app",
-        searchYoda();
-  }
-}
-
-
-
-function searchPal() {
-  axios.get("https://swapi.co/api/people/21").then(function(response) {
-    updateData(response.data);
-  });
-}
-function updateData(data) {
-  nameSw.innerText = data.name;
-}
-
-
-function searchLuke() {
-  axios.get("https://swapi.co/api/people/1").then(function(response) {
-    updateData(response.data);
-  });
-}
-function updateData(data) {
-  nameSw.innerText = data.name;
-}
-
-
-
-function searchVader() {
-  axios.get("https://swapi.co/api/people/4").then(function(response) {
-    updateData(response.data);
-  });
-}
-function updateData(data) {
-  nameSw.innerText = data.name;
-}
-
-
-function searchChewi() {
-  axios.get("https://swapi.co/api/people/13").then(function(response) {
-    updateData(response.data);
-  });
-}
-function updateData(data) {
-  nameSw.innerText = data.name;
-}
-
-
-function searchHan() {
-  axios.get("https://swapi.co/api/people/10").then(function(response) {
-    updateData(response.data);
-  });
-}
-function updateData(data) {
-  nameSw.innerText = data.name;
-}
-
-
-function searchYoda() {
-  axios.get("https://swapi.co/api/people/20").then(function(response) {
-    updateData(response.data);
-  });
-}
-function updateData(data) {
-  nameSw.innerText = data.name;
-}
-
-
-function searchR2d2() {
-  axios.get("https://swapi.co/api/people/3").then(function(response) {
-    updateData(response.data);
-  });
-}
-function updateData(data) {
-  nameSw.innerText = data.name;
-}
-
+window.addEventListener("load", e => {
+  console.log(location.search);
+  mostrarHeroe();
+});
 

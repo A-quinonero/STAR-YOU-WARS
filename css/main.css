@@ -65,8 +65,7 @@ text-align: center;
 .btnInd{
     margin: 0 auto;
     width: 150px;
-    padding-top: 4em;
-    
+    padding-top: 4em; 
 }
 .respuestas{
 color: black;
@@ -115,7 +114,7 @@ margin: 0 auto;
 width: 400px;
 }
 .text-center{
-padding-right: 30px;
+margin: 0 auto;
 }
 .starwars-list{
 padding-top: 3em;
@@ -128,6 +127,14 @@ justify-content: center;
 display: flex;
 justify-content: center;
 }
-#btnResp.hidden{
-display: none;
+.respColor{
+color: #FFE81F;
+background-color: rgb(46, 55, 90);
+}
+.btnTesti{
+    color: #FFE81F;
+   background-color: rgb(46, 55, 90);
+}
+.rowTest{
+margin: 0 auto;
 }
