@@ -128,3 +128,6 @@ justify-content: center;
 display: flex;
 justify-content: center;
 }
+#btnResp.hidden{
+display: none;
+}

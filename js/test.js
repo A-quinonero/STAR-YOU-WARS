@@ -14,9 +14,15 @@ let counter = 0;
   });
 });
 
+btnResp.addEventListener('click', (e) =>{
+    //e.preventDefault()
+    console.log('cloosdijfkd')
+    setTimeout(() => { mostrarHeroe(counter) }, 1000);
 
+})
 
-function mostrarHeroe() {
+function mostrarHeroe(counter) {
+    console.log('swichiiinnnnn')
   switch (counter) {
     case 6:
       document.getElementById("app").src = "images/darthvader-app",
@@ -48,7 +54,6 @@ function mostrarHeroe() {
   }
 }
 
-mostrarHeroe(0)
 
 
 function searchPal() {
