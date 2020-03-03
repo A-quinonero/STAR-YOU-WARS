@@ -11,7 +11,7 @@ let counter = 0;
 
 btnResp.addEventListener("click", e => {
   e.preventDefault();
-  open(`result.html?score=${counter}`);
+  open(`result.html?score=${counter}`,"_self");
 });
 
 window.addEventListener("load", e => {
