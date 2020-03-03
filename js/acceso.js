@@ -11,16 +11,15 @@ var currentUser
 logInButton.addEventListener('click', store)
 
 let usersDB = JSON.parse(localStorage.getItem('users'))
-
+console.log(email.value)
     function store() {
         usersDB.forEach(user => {
                //console.log(user)
             if (user.email === email.value && user.password === password.value){
                 alert(`                    Estás conectado. 
                   La fuerza está contigo.`);
-              currentUser = user 
-              console.log(currentUser)
-             
+              localStorage.setItem('currentUser', JSON.stringify(user))
+            
               window.location.href =  "../index.html"
             
             }

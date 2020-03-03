@@ -121,6 +121,14 @@ margin: 0 auto;
 .text-center{
 margin: 0 auto;
 }
+.films-list{
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: center;
+	align-content: stretch
+}
 .starwars-list{
 padding-top: 3em;
 margin: 0 auto;
@@ -143,3 +151,38 @@ background-color: rgb(46, 55, 90);
 .rowTest{
 margin: 0 auto;
 }
+.helloUser{
+width: 200px;
+height: 50px;
+}
+h4{
+font-family: Arial, Helvetica, sans-serif;
+}
+.characContainer{
+height: 400px;
+padding-top: 5em;
+}
+#welcomeArticle{
+font-size: 15px;
+
+}
+#welcomeArticle p{
+font-family: Arial, Helvetica, sans-serif;
+position: absolute; 
+right: 10px;
+top: 20%;
+}
+.charcCont{
+padding-top: 3em;
+height: 300px;
+
+}
+.borderChar{
+border: solid #FFE81F;
+width: 350px;
+height: 300px;
+margin: 20px;
+}
+
+
+
