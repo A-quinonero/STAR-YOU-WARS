@@ -65,5 +65,5 @@ function createUser (name, email, password) {
     }
     alert('¡Registro completado!')
     localStorage.setItem('users', JSON.stringify(usersDB));
-    window.location.href =  "../index.html"
+    window.location.href =  "index.html"
 } 
