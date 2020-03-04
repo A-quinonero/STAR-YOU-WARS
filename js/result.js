@@ -29,7 +29,7 @@ function mostrarHeroe(counter) {
     case '1':
       (document.getElementById("app").src = "images/chewi-app"), searchChewi();
       break;
-    default:
+    case 0:
       (document.getElementById("app").src = "images/yoda-app"), searchYoda();
   }
 }
