@@ -12,16 +12,16 @@ color: #FFE81F;
 .navbar{
     background-color: rgb(46, 55, 90);
 }
-
+.logo{
+color:#FFE81F;
+}
 @media screen and (max-width: 600px) {
 .carousel-caption{
       font-size: 30px;
 
 }
 }
-.logo{
-    width: 100px;
-}
+
 .nav-item{
 color: #FFE81F;  
 
@@ -191,4 +191,18 @@ border: solid #FFE81F;
 width: 350px;
 height: 300px;
 margin: 20px;
+}
+.neon {
+	color:#FFE81F;
+	
+	text-shadow:
+		0 0 5px rgba(0,178,255,1),
+		0 0 10px rgba(0,178,255,1),
+		0 0 20px rgba(0,178,255,1),
+		0 0 40px rgba(38,104,127,1),
+		0 0 80px rgba(38,104,127,1),
+		0 0 90px rgba(38,104,127,1),
+		0 0 100px rgba(38,104,127,1),
+		0 0 140px rgba(38,104,127,1),
+		0 0 180px rgba(38,104,127,1);
 }
