@@ -19,14 +19,7 @@ signUpButton.addEventListener("click", function(event){
         createUser(userName.value, email.value, password.value)
     };
 })
-/*class User {
-    constructor(name, email, password){
-        this.name = name;
-        this.email = email;
-        this.password = password;
-    }
-  }
-  */
+
 function checkValidUser() {
     let signUpValidator = new SignUpValidator(userName.value, email.value, password.value, repeatPassword.value);
     

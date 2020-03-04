@@ -75,19 +75,33 @@ class SignUpValidator extends Validator {
 
 class LogInValidator extends Validator {
   constructor(userName, email, password) {
-    super(userName, email, password);
+    super(email, password);
   }
 
-  checkEmailInDB(string) {
+  checkEmailInDB(userDB) {
+      let emailExists = false;
     if (!userDB) {
       return false;
     } else {
       userDB.forEach(user => {
-        if (user.email === string) {
-          return true;
+        if (user.email === email.value) {
+          emailExists = true;
         }
       });
     }
-    return false;
+    return emailExists;
+  }
+  checkPasswordInDB(userDB) {
+      let passwordExists = false;
+    if (!userDB) {
+      return false;
+    } else {
+      userDB.forEach(user => {
+        if (user.password === password.value) {
+          passwordExists = true;
+        }
+      });
+    }
+    return passwordExists;
   }
 }
