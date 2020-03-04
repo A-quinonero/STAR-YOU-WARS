@@ -7,7 +7,7 @@ let gender = document.getElementById("gender")
 let btnRandom = document.getElementById('btnRandom')
 
 function getInfo(){
-    /*updateInforWithLoading()*/
+    updateInforWithLoading()
     let randomNumber = Math.floor((Math.random() * 88) + 1)
     let apiUrl = 'https://swapi.co/api/people/' + randomNumber
     axios.get(apiUrl).then(response => {
@@ -33,13 +33,14 @@ function updateInfoWithError(){
     gender.innerText = ''
     }
 
-   /* function updateInforWithLoading(){
-    name1.innerText = '<i class="fas fa-cog fa-spin"></i>'
+    function updateInforWithLoading(){
+    nameChar.innerHTML = '<div class="spinner-border text-warning">'
     height.innerText = ""
     mass.innerText = ""
     birthYear.innerText = ""
+    gender.innerText = ''
     }
-    */
+    
 
 
 btnRandom.addEventListener('click', getInfo)

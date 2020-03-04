@@ -81,19 +81,22 @@ text-align: start;
 
 color: black;
 height: 150px;
-width: 300px;
+width: 260px;
 }
 
 
 .card-body{
 background-color: white;
-width: 300px;
+width: 260px;
 height: 150px;
+display: block;
+margin: auto;
 }
 
 .preguntasSec{
 margin: 0 auto;
 padding-top: 3em;
+height: 100%;
 
 }
 .pregCol{
@@ -143,21 +146,27 @@ justify-content: center;
 .respColor{
 color: #FFE81F;
 background-color: rgb(46, 55, 90);
+display: block;
+margin: auto;
 }
 .btnTesti{
     color: #FFE81F;
    background-color: rgb(46, 55, 90);
 }
 .rowTest{
-margin: 0 auto;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: stretch;
+	align-content: stretch
 }
-.helloUser{
-width: 200px;
-height: 50px;
+.conTest{
+width: 100%;
+height: 100%;
+padding: 2em;
 }
-h4{
-font-family: Arial, Helvetica, sans-serif;
-}
+
 .characContainer{
 height: 400px;
 padding-top: 5em;
@@ -183,6 +192,3 @@ width: 350px;
 height: 300px;
 margin: 20px;
 }
-
-
-
