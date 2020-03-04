@@ -4,13 +4,16 @@
     font-family: StarJedi;
     src: url("../tipografia/SFDistantGalaxyAltOutline.ttf");
 }
+
 *{
 font-family: StarJedi;
 color: #FFE81F;
 }
 
+
 .navbar{
-    background-color: rgb(46, 55, 90);
+	background-color: rgb(46, 55, 90);
+
 }
 .logo{
 color:#FFE81F;
