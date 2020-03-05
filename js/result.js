@@ -1,6 +1,8 @@
 let nameSw = document.getElementById("name");
 let btnResp = document.getElementById("btnResp");
 let respVal = document.querySelectorAll(".respu1");
+let respVal1 = document.querySelectorAll(".respu");
+let expliSw = document.getElementById('explicacion')
 window.addEventListener("load", e => {
   console.log(location.search);
   mostrarHeroe(location.search.split("?score=")[1]);
@@ -10,27 +12,56 @@ function mostrarHeroe(counter) {
   
   switch (counter) {
     case '6':
-      (document.getElementById("app").src = "images/darthvader-app"),
-        searchVader();
-      break;
-    case '5':
-      (document.getElementById("app").src = "images/palpatine-app"),
-        searchPal();
+      updateInforWithLoading()
+      searchPal(),
+      expliSw.innerText = `Eres una persona ambiciosa,
+       con un gran control sobre tu poder.`,
+      (document.getElementById("app").src = "images/palpatine-app");
       break;
     case '4':
-      (document.getElementById("app").src = "images/r2d2"), searchR2d2();
-      break;
-    case '3':
-      (document.getElementById("app").src = "images/han-app"), searchHan();
+      updateInforWithLoading()
+      searchVader(),
+      expliSw.innerText = `No hay nada que te pare,
+       tu fuerza es tu coraje.`,
+      (document.getElementById("app").src = "images/darthvader-app");
       break;
     case '2':
-      (document.getElementById("app").src = "images/luke-app"), searchLuke();
+      updateInforWithLoading()
+      searchR2d2(),
+      expliSw.innerText = `Eres una persona equilibrada,
+      aunque tienes mala leche.`,
+      (document.getElementById("app").src = "images/r2d2");
+      
       break;
-    case '1':
-      (document.getElementById("app").src = "images/chewi-app"), searchChewi();
+    case '0':
+      updateInforWithLoading()
+      searchHan(),
+      expliSw.innerText = `Eres muy sexy,
+      pero deberías pensar más en los demás.`,
+      (document.getElementById("app").src = "images/han-app");
       break;
-    case 0:
-      (document.getElementById("app").src = "images/yoda-app"), searchYoda();
+    case '-2':
+      updateInforWithLoading()
+       searchLuke(),
+       expliSw.innerText = `Tienes mucho potencial,
+       tu fuerza está en tu corazón.`,
+       (document.getElementById("app").src = "images/luke-app")
+      break;
+    case '-4':
+      updateInforWithLoading()
+       searchChewi(),
+       expliSw.innerText = `Eres un gran aliado,
+       sin tu ayuda nada sería posible.`,
+       (document.getElementById("app").src = "images/chewi-app");
+      break;
+    case '-6':
+      updateInforWithLoading()
+       searchYoda(),
+       expliSw.innerText = `Eres una persona sabia,
+       nadie puede dudar de tu conocimiento.`,
+       (document.getElementById("app").src = "images/yoda-app");
+       break;
+
   }
 }
 
@@ -96,3 +127,6 @@ function searchR2d2() {
 function updateData(data) {
   nameSw.innerText = data.name;
 }
+function updateInforWithLoading(){
+  nameSw.innerHTML = '<div class="spinner-border text-warning">'
+  }

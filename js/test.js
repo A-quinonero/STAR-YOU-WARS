@@ -5,10 +5,21 @@
 let counter = 0;
 [...respVal].forEach(item => {
   item.addEventListener("change", function(event) {
-    counter += Number(event.currentTarget.value);
+    counter ++;
   });
 });
 
+[...respVal1].forEach(item => {
+  item.addEventListener("change", function(event) {
+    counter --;
+  });
+});
+/*[...respVal2].forEach(item => {
+  item.addEventListener("change", function(event) {
+    counter +2;
+  });
+});
+*/
 btnResp.addEventListener("click", e => {
   e.preventDefault();
   open(`result.html?score=${counter}`,"_self");
