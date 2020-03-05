@@ -50,7 +50,7 @@ body {
 		background-image: url("../images/darth-vader.jpg");
 		background-repeat: no-repeat;
     background-attachment: fixed;
-		
+		height: 100vh;
 		
 		
 	  }
