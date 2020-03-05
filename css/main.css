@@ -90,7 +90,7 @@ width: 260px;
 .card-body{
 background-color: white;
 width: 260px;
-height: 150px;
+height: 180px;
 
 display: block;
 margin: auto;
@@ -220,4 +220,7 @@ height: 450px;
 }
 #explicacion{
 font-family: Arial, Helvetica, sans-serif;
+}
+.Quest{
+padding-top: 2em;
 }

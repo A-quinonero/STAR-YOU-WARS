@@ -14,12 +14,12 @@ let counter = 0;
     counter --;
   });
 });
-/*[...respVal2].forEach(item => {
+[...respVal2].forEach(item => {
   item.addEventListener("change", function(event) {
-    counter +2;
+    counter = counter + 2;
   });
 });
-*/
+
 btnResp.addEventListener("click", e => {
   e.preventDefault();
   open(`result.html?score=${counter}`,"_self");
