@@ -44,7 +44,7 @@ body {
   height: 100vh;
   
 }
-@media (max-width: 600px){
+@media screen and (max-width: 600px){
 
 	body {
 		background-image: url("../images/darth-vader.jpg");
