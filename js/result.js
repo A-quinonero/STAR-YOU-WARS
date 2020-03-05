@@ -133,7 +133,6 @@ function mostrarHeroe(counter) {
          expliSw.innerText =`Eres un máquina,
          mi cabezudo amigo`;
         (document.getElementById("app").src = "images/c3p0-app");
-        
         break;
   }
 }

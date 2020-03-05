@@ -2,6 +2,7 @@
   cursor: url(http://cur.cursors-4u.net/others/oth-1/oth28.cur), auto !important;
 }
 
+
 @font-face {
   font-family: StarJedi;
   src: url("../tipografia/SFDistantGalaxyAltOutline.ttf");
@@ -43,6 +44,28 @@ body {
   height: 100vh;
   width: 100%;
 }
+@media (max-width: 600px){
+
+	body {
+		background-image: url("../images/darth-vader.jpg");
+		background-repeat: no-repeat;
+    background-attachment: fixed;
+		
+		
+		
+	  }
+}
+@media (min-device-width: 481px) and (max-device-width: 768px) {
+	body {
+		background-image: url("../images/darth-vader.jpg");
+		background-repeat: no-repeat;
+    background-attachment: fixed;
+		
+		
+		
+	  }
+}
+
 label {
   color: #ffe81f;
 }
@@ -70,12 +93,11 @@ label {
   background-color: white;
   width: 260px;
   height: 180px;
-
-  display: block;
-  margin: auto;
   color: black;
   font-family: Arial, Helvetica, sans-serif;
   text-align: start;
+  display: block;
+  margin: auto;
 }
 
 .preguntasSec {
@@ -123,14 +145,10 @@ label {
   display: flex;
   justify-content: center;
 }
-.respColor {
-  color: #ffe81f;
-  background-color: rgb(46, 55, 90);
-  display: block;
-  margin: auto;
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 .btnTesti {
+display: block;
+margin: auto;
   color: #ffe81f;
   background-color: rgb(46, 55, 90);
 }
@@ -199,5 +217,19 @@ label {
   text-align: center;
 }
 .randomChar p{
+font-family: Arial, Helvetica, sans-serif;
+}
+.Quest{
+	color: #ffe81f;
+	font-family: Arial, Helvetica, sans-serif;	
+}
+.containerPlus{
+display: block;
+margin: auto;
+text-align: center;
+}
+.respColor{
+background-color: rgb(46, 55, 90);
+color: #ffe81f;
 font-family: Arial, Helvetica, sans-serif;
 }
