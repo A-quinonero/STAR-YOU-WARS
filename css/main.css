@@ -42,14 +42,14 @@ body {
   background-repeat: no-repeat;
   background-color: rgb(46, 55, 90);
   height: 100vh;
-  width: 100%;
+  
 }
 @media (max-width: 600px){
 
 	body {
 		background-image: url("../images/darth-vader.jpg");
 		background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: fixed!important;
 		height: 100vh;
 		
 		
@@ -150,6 +150,7 @@ margin: auto;
   justify-content: center;
   align-items: stretch;
   align-content: stretch;
+  margin-bottom: 5em;
 }
 .conTest {
   width: 100%;
