@@ -127,13 +127,6 @@ function mostrarHeroe(counter) {
        nadie puede dudar de tu conocimiento.`,
        (document.getElementById("app").src = "images/yoda-app");
        break;
-       default:
-        updateInforWithLoading()
-         searchC3po()
-         expliSw.innerText =`Eres un máquina,
-         mi cabezudo amigo`;
-        (document.getElementById("app").src = "images/c3p0-app");
-        break;
   }
 }
 
