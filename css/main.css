@@ -43,6 +43,7 @@ body {
   background-color: rgb(46, 55, 90);
   
   
+  
 }
 @media (min-width: 800px) {
 	body {
@@ -77,7 +78,7 @@ body {
 	  }
 }
 
-@media (min-width: 400px) {
+@media (min-width: 350px) {
 	body {
 		background-image: url("../images/darth-vader.jpg");
 		background-repeat: no-repeat;
