@@ -58,7 +58,7 @@ function mostrarHeroe(counter) {
       case '6':
       updateInforWithLoading()
       searchJarjar(),
-      expliSw.innerText = `Tienes un aspecto dudoso,
+      expliSw.innerText = `Tienes un problema,
        todos te odiamos.`,
       (document.getElementById("app").src = "images/jarjar-app");
       break;

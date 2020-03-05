@@ -224,3 +224,8 @@ font-family: Arial, Helvetica, sans-serif;
 .Quest{
 padding-top: 2em;
 }
+.error{
+font-family: Arial, Helvetica, sans-serif;
+color: tomato;
+text-align: center;
+}
