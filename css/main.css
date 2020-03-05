@@ -55,16 +55,7 @@ body {
 		
 	  }
 }
-@media (min-device-width: 481px) and (max-device-width: 768px) {
-	body {
-		background-image: url("../images/darth-vader.jpg");
-		background-repeat: no-repeat;
-    background-attachment: fixed;
-		
-		
-		
-	  }
-}
+
 
 label {
   color: #ffe81f;
