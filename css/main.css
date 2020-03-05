@@ -1,231 +1,203 @@
-* {cursor: url(http://cur.cursors-4u.net/others/oth-1/oth28.cur), auto !important;} 
-
-@font-face{
-    font-family: StarJedi;
-    src: url("../tipografia/SFDistantGalaxyAltOutline.ttf");
+* {
+  cursor: url(http://cur.cursors-4u.net/others/oth-1/oth28.cur), auto !important;
 }
 
-*{
-font-family: StarJedi;
-color: #FFE81F;
+@font-face {
+  font-family: StarJedi;
+  src: url("../tipografia/SFDistantGalaxyAltOutline.ttf");
 }
 
-
-.navbar{
-	background-color: rgb(46, 55, 90);
-
-}
-.logo{
-color:#FFE81F;
-}
-@media screen and (max-width: 600px) {
-.carousel-caption{
-      font-size: 30px;
-
-}
+* {
+  font-family: StarJedi;
+  color: #ffe81f;
 }
 
-.nav-item{
-color: #FFE81F;  
-
+.navbar {
+  background-color: rgb(46, 55, 90);
+}
+.logo {
+  color: #ffe81f;
+}
+.nav-item {
+  color: #ffe81f;
+}
+.inReg {
+  height: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-.inReg{
-height: 40px;
-font-family: Arial, Helvetica, sans-serif;
-color: black;
-width: 100%;
-margin-top: 10px;
-margin-bottom: 10px;
-text-align: center;
+.btnReg {
+  margin: 0 auto;
+  width: 150px;
 }
 
-
-
-.btnReg{
-margin: 0 auto;
-width: 150px;
-
+body {
+  background-image: url("../images/darth-vader.jpg");
+  background-repeat: no-repeat;
+  background-color: rgb(46, 55, 90);
+  height: 100vh;
+  width: 100%;
+}
+label {
+  color: #ffe81f;
+}
+.texto {
+  margin: 0 auto;
+}
+.pregunta {
+  padding-top: 10em;
+  text-align: center;
 }
 
-body{
-background-image: url("../images/darth-vader.jpg");
-background-repeat: no-repeat;
-background-color: rgb(46, 55, 90);
-height:100vh;
-width: 100%;
-}
-label{
-color: #FFE81F;
-}
-.texto{
-margin: 0 auto;
-}
-.pregunta{
-padding-top: 10em;
-text-align: center;
+.btnInd {
+  margin: 0 auto;
+  width: 150px;
+  padding-top: 4em;
 }
 
-.btnInd{
-    margin: 0 auto;
-    width: 150px;
-    padding-top: 4em;
-    
-}
-.respuestas{
-color: black;
-font-family: Arial, Helvetica, sans-serif;
-text-align: start;
-
-
-}
-.btn-primary{
-
-color: black;
-height: 150px;
-width: 260px;
+.btn-primary {
+  color: black;
+  height: 150px;
+  width: 260px;
 }
 
+.card-body {
+  background-color: white;
+  width: 260px;
+  height: 180px;
 
-.card-body{
-background-color: white;
-width: 260px;
-height: 180px;
-
-display: block;
-margin: auto;
+  display: block;
+  margin: auto;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: start;
 }
 
-.preguntasSec{
-margin: 0 auto;
-padding-top: 3em;
-height: 100%;
-
+.preguntasSec {
+  margin: 0 auto;
+  padding-top: 3em;
+  height: 100%;
 }
-.pregCol{
-padding-top: 1em;
-justify-content: center;
+.pregCol {
+  padding-top: 1em;
+  justify-content: center;
 }
 .main-forms {
-    margin-top: 75px;
-    padding: 30px;
-  }
-  
+  margin-top: 75px;
+  padding: 30px;
+}
+
+.formAcc {
+  margin: 0 auto;
+  width: 400px;
+}
+
+.colReg {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.text-center {
+  margin: 0 auto;
+}
+.films-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: stretch;
+}
+.starwars-list {
+  padding-top: 3em;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.info.container {
+  display: flex;
+  justify-content: center;
+}
+.respColor {
+  color: #ffe81f;
+  background-color: rgb(46, 55, 90);
+  display: block;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.btnTesti {
+  color: #ffe81f;
+  background-color: rgb(46, 55, 90);
+}
+.rowTest {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  align-content: stretch;
+}
+.conTest {
+  width: 100%;
+  height: 100%;
  
-.formAcc{
-margin: 0 auto;
-width: 400px;   
 }
 
-
-.colReg{
-width: 300px;
-margin: 0 auto;
-
+.characContainer {
+  height: 400px;
+  padding-top: 5em;
 }
-
-.text-center{
-margin: 0 auto;
+#welcomeArticle {
+  font-size: 15px;
 }
-.films-list{
-    display: flex;
-	flex-direction: column;
-	flex-wrap: nowrap;
-	justify-content: flex-start;
-	align-items: center;
-	align-content: stretch
+#welcomeArticle p {
+  font-family: Arial, Helvetica, sans-serif;
+  position: absolute;
+  right: 10px;
+  top: 20%;
 }
-.starwars-list{
-padding-top: 3em;
-margin: 0 auto;
-display: flex;
-justify-content: center;
+.charcCont {
+  padding-top: 3em;
+  height: 300px;
 }
-.info.container{
-
-display: flex;
-justify-content: center;
-}
-.respColor{
-color: #FFE81F;
-background-color: rgb(46, 55, 90);
-display: block;
-margin: auto;
-font-family: Arial, Helvetica, sans-serif;
-
-}
-.btnTesti{
-    color: #FFE81F;
-   background-color: rgb(46, 55, 90);
-}
-.rowTest{
-    display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: stretch;
-	align-content: stretch
-}
-.conTest{
-width: 100%;
-height: 100%;
-padding: 2em;
-}
-
-.characContainer{
-height: 400px;
-padding-top: 5em;
-}
-#welcomeArticle{
-font-size: 15px;
-
-}
-#welcomeArticle p{
-font-family: Arial, Helvetica, sans-serif;
-position: absolute; 
-right: 10px;
-top: 20%;
-}
-.charcCont{
-padding-top: 3em;
-height: 300px;
-
-}
-.borderChar{
-border: solid #FFE81F;
-width: 350px;
-height: 300px;
-margin: 20px;
+.borderChar {
+  border: solid #ffe81f;
+  width: 350px;
+  height: 300px;
+  margin: 20px;
 }
 
 .neon {
-	color:#FFE81F;
-	
-	text-shadow:
-		0 0 5px rgba(0,178,255,1),
-		0 0 10px rgba(0,178,255,1),
-		0 0 20px rgba(0,178,255,1),
-		0 0 40px rgba(38,104,127,1),
-		0 0 80px rgba(38,104,127,1),
-		0 0 90px rgba(38,104,127,1),
-		0 0 100px rgba(38,104,127,1),
-		0 0 140px rgba(38,104,127,1),
-		0 0 180px rgba(38,104,127,1);
+  color: #ffe81f;
+
+  text-shadow: 0 0 5px rgba(0, 178, 255, 1), 0 0 10px rgba(0, 178, 255, 1),
+    0 0 20px rgba(0, 178, 255, 1), 0 0 40px rgba(38, 104, 127, 1),
+    0 0 80px rgba(38, 104, 127, 1), 0 0 90px rgba(38, 104, 127, 1),
+    0 0 100px rgba(38, 104, 127, 1), 0 0 140px rgba(38, 104, 127, 1),
+    0 0 180px rgba(38, 104, 127, 1);
 }
-.app{
-display: block;
-margin: auto;
-padding-top: 2em;
-height: 450px;
+.app {
+  display: block;
+  margin: auto;
+  padding-top: 2em;
+  height: 450px;
 }
-#explicacion{
+#explicacion {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.Quest {
+  padding-top: 2em;
+}
+.error {
+  font-family: Arial, Helvetica, sans-serif;
+  color: tomato;
+  text-align: center;
+}
+.randomChar p{
 font-family: Arial, Helvetica, sans-serif;
-}
-.Quest{
-padding-top: 2em;
-}
-.error{
-font-family: Arial, Helvetica, sans-serif;
-color: tomato;
-text-align: center;
 }
