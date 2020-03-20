@@ -26,4 +26,10 @@ Task
 En order de prioridad.
 
 Git
-URls para la repo del proyecto.
+URls del proyecto:
+
+TRELLO: https://trello.com/b/t83PMGuU/changerest
+
+WIREFRAMES:
+
+![alt text](https://ibb.co/WKQ5c7m)
